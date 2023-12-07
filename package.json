@@ -1,0 +1,66 @@
+{
+  "name": "@sunly95/unplugin-i18n-translation",
+  "description": "A auto translate i18n files for unified plugin",
+  "keywords": [
+    "unplugin",
+    "auto translation",
+    "i18n"
+  ],
+  "version": "0.1.0",
+  "main": "index.js",
+  "type": "module",
+  "author": "sunly <sunjingxiang1995@gmail.com>",
+  "exports": {
+    "import": "./dist/index.mjs",
+    "require": "./dist/index.cjs"
+  },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "ts-node --esm src/index.ts",
+    "build": "rollup -c",
+    "build:version": "node ./gen-version.js",
+    "lint": "eslint --ext .ts src",
+    "prettier": "prettier --write src/**/*.ts"
+  },
+  "dependencies": {
+    "tencentcloud-sdk-nodejs": "^4.0.661"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.3",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@rollup/plugin-typescript": "^11.1.2",
+    "@sunly95/gen-version": "^2.1.0",
+    "@types/node": "^20.4.9",
+    "@types/webpack": "^5.28.1",
+    "@typescript-eslint/eslint-plugin": "^6.3.0",
+    "@typescript-eslint/parser": "^6.3.0",
+    "eslint": "^8.46.0",
+    "eslint-config-prettier": "^9.0.0",
+    "prettier": "^3.0.1",
+    "rollup": "^3.27.2",
+    "rollup-plugin-dts": "^5.3.1",
+    "rollup-plugin-terser": "^7.0.2",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.6.1",
+    "typescript": "^5.1.6",
+    "unplugin": "^1.5.1",
+    "webpack": "^5.88.2"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sjx1995/unplugin-i18n-translation.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sjx1995/unplugin-i18n-translation/issues"
+  },
+  "homepage": "https://github.com/sjx1995/unplugin-i18n-translation#readme",
+  "license": "MIT"
+}
